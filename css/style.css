@@ -1,0 +1,2526 @@
+@charset "utf-8";
+
+/* --------------------------------------
+共通
+-------------------------------------- */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #000000;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', sans-serif, 'Noto Serif JP', serif, 'M PLUS 1p', 'sans-serif';
+    font-feature-settings: "palt" 1;
+    -webkit-font-feature-settings: "palt" 1;
+    -moz-font-feature-settings: "palt" 1;
+    letter-spacing: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center{
+    text-align: center;
+}
+
+.kusa{
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+.kusa_sp{
+    display: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------------------------------------------
+header
+------------------------------------------------*/
+header{
+    color:#fff;
+    padding-top: 50px;
+    background-color: #834e00;
+}
+
+.catch-copy{
+    margin: 0 auto;
+    font-size: 4.0rem;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1.5;
+}
+
+.catch-image{
+    background-image: url("../image/pc/yasai1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1200px;
+    height: 680px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.humberger-img{
+    display: none;
+}
+
+.logo{
+    position: absolute;
+    display: block;
+    right: 1%;
+    bottom: 1%;
+}
+
+.navigator_div{
+    display: none;
+}
+
+/* 黒いほうのナビゲーション */
+.nav_pc{
+    width: 300px;
+    height: 675px;
+    background-color: rgba(0,0,0,0.4);
+    margin:0 0 0 auto;
+    list-style: none;
+    color: #fff;
+    font-size: 2.0rem;
+    font-family: 'Noto Serif JP', serif;
+    padding-left: 70px;
+}
+
+.logo_sp,ul.nav{
+    display: none;
+}
+
+
+.nav-list{
+    text-align: left;
+    padding-top: 40px;
+}
+
+.nav-list>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list>a:hover{
+    color: rgb(252, 232, 177);
+}
+
+
+
+/* ----------------------------------------------
+section-lead
+------------------------------------------------*/
+
+.lead{
+    padding-top: 90px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lead-text{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2.4rem;
+    padding: 0 100px 0 90px;
+    line-height: 2.08;
+}
+
+.conversion-button{
+    display: block;
+    padding: 70px 0;
+    margin: 0 auto;
+}
+
+.conversion-button_sp{
+    display: none;
+}
+
+
+/* ----------------------------------------------
+section-three-reason
+------------------------------------------------*/
+
+.three-reason{
+    padding: 70px 100px 60px;
+    background-color: #b28850;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 4.0rem;
+    font-family: 'Noto Serif JP', serif;
+    color: #fbf7ce;
+    letter-spacing: 0.12em;
+    margin: 0;
+}
+
+.reason-box{
+    color: #eeeeee;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.number{
+    padding-top: 50px;
+    width: 31.67%;
+}
+
+.number:nth-of-type(2){
+    margin: 0 20px;
+}
+
+.eq-distance{
+    padding-bottom: 10px;
+}
+
+.eq-distance_sp{
+    display: none;
+}
+
+.reason{
+    background-color: #834e00;
+    width: 100%;
+}
+
+.sub-lead{
+    display: block;
+    font-size: 3.0rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 35px 0;
+    letter-spacing: 0.06em;
+}
+p.last{
+    letter-spacing: 0.2em;
+    line-height: 1.1;
+    padding: 15px 0;
+    min-height: 100px;
+}
+
+.sil-foundation{
+    max-width: 380px;
+    max-height: 300px;
+    background-color: #fff;
+}
+
+.silhouette{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.silhouette_sp{
+    display: none;
+}
+
+.reason-text{
+    text-indent: 1em;
+    line-height: 1.875;
+    letter-spacing: 0.12em;
+    text-align: left;
+    padding: 30px;
+    margin: 0;
+    min-height: 270px;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+
+/* ----------------------------------------------
+section-customer-voice
+------------------------------------------------*/
+.customer-wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.flag-decoration{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 23vw;
+}
+
+.flag-decoration_sp{
+    display: none;
+}
+
+.balloon-decoration{
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    width: 10vw;
+}
+
+
+
+.customer-voice{
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.double-title{
+    position: relative;
+    max-width: 1200px;
+    height: 160px;
+    margin:  0 auto;
+    margin: 0 50px;
+    font-weight: 600;
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing: 0.12em;
+    line-height: 1.1;
+}
+
+.up-title{
+    background-color:#b28850;
+    max-width: 800px;
+    padding: 20px 0 50px;
+    padding-left: 100px;
+    color: #fbf7ce;
+    margin-right: 200px;
+}
+
+.down-title{
+    background-color: #834e00;
+    max-width: 800px;
+    padding: 30px 90px;
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+.up-font{
+    font-size: 3.0rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.down-font{
+    font-size: 4.5rem;
+    line-height: 1;
+    color: #eeeeee;
+    letter-spacing: 0.12;
+}
+
+.sp-only-blank{
+    display: none;
+}
+
+.customer{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.first{
+    padding-top: 100px;
+}
+
+.customer-image{
+    max-width: 250px;
+    max-height: 250px;
+
+}
+
+.customer-text{
+    padding: 20px 0;
+    max-width: 66.6%;
+    margin: 0;
+    margin-left: 50px;
+    line-height: 1.875;
+}
+
+.text-bold{
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.next{
+    justify-content: flex-end;
+}
+
+div.customer>.customer-text:nth-child(1){
+    text-align: right;
+    margin-left: 0;
+    margin-right: 50px;
+}
+
+div.customer.end{
+    margin-bottom: 0;
+}
+
+.conversion-button2{
+    padding: 100px 0 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.conversion-button2_sp{
+    display: none;
+}
+
+
+/* ----------------------------------------------
+section-farm-reality
+------------------------------------------------*/
+
+.organic-farm{
+    background-image: url("../image/pc/round_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 110px 100px 55px;
+    color: #eeeeee;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.farm-reality-title{
+    color: #eeeeee;
+}
+
+h3{
+    font-size: 4.0rem;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.punctuation{
+    font-size: 2.0rem;
+}
+
+.sp-br-only{
+    display: none;
+}
+
+.farm-text{
+    text-indent: 1em;
+    padding: 0 100px 40px;
+    font-size: 2.0rem;
+    line-height: 1.74;
+    font-weight: 600;
+    margin: 0;
+}
+
+.farm-text:first-of-type{
+    margin-top: 0;
+    padding-top: 70px;
+}
+
+.farm-text:last-of-type{
+    padding-bottom: 40px;
+}
+
+.font-bold{
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+
+/* ----------------------------------------------
+omake-section オーガニックとは？
+------------------------------------------------*/
+
+.omake-section{
+    max-width: 700px;
+    background-color: #fbf7e2;
+    position: relative;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px 50px;
+}
+
+.question, .answer{
+    color: #000;
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+.question{
+    padding-left: 25px;
+}
+
+.answer{
+    margin: 0;
+    padding-right: 25px;
+}
+
+.question-flex{
+    display: flex;
+}
+
+.question-flex:last-of-type{
+    padding-top: 20px;
+}
+
+.girl, .teacher{
+    width: 70px;
+    height: 70px;
+}
+
+.girl_sp, .teacher_sp{
+    display: none;
+}
+
+.small{
+    color: #000;
+    font-size: 1.0rem;
+    font-weight: 600;
+}
+
+/* ----------------------------------------------
+section-difference
+------------------------------------------------*/
+
+.difference{
+    padding-top: 80px;
+}
+
+.punction2{
+    font-size: 1.5rem;
+}
+
+.table{
+    display: block;
+    padding-top: 35px;
+    margin: auto;
+}
+
+.table_sp{
+    display: none;
+}
+
+/* ----------------------------------------------
+section-farmer-voice
+------------------------------------------------*/
+.farmer-voice{
+    padding-top: 125px;
+    position: relative;
+}
+
+.double-title2{
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 1200px;
+    height: 170px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.up-title2{
+    background-color: #b28850;
+    max-width: 800px;
+    padding: 25px 0 45px;
+    padding-left: 115px;
+    color: #fbf7ce;
+    letter-spacing: 0.1em;
+    line-height: 1.0;
+    margin-left: 30px;
+    margin-right: 300px;
+}
+.up-font2{
+    font-size: 3.0rem;
+    margin: 0;
+}
+
+.down-title2{
+    background-color: #834e00;
+    max-width: 875px;
+    padding: 30px 10px;
+    padding-left: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-left: 5%;
+}
+
+.down-font2{
+    font-size: 4.5rem;
+    margin: 0;
+    color: #eeeeee;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+}
+
+.right-foundation{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.right-foundation::before{
+    content: '';
+    background-color: #d8c3a7;
+    position: absolute;
+    top: 14.6%;
+    right: 0;
+    width: 80%;
+    height: 37%;
+    z-index: 1;
+}
+
+.right-wrap{
+    position: relative;
+    z-index: 100;
+    margin-top: 70px;
+}
+
+.hidamari-farm, .souryoku-farm{
+    display: block;
+    margin: auto;
+}
+
+.hidamari-farm-sp, .souryoku-farm-sp{
+    display: none;
+}
+
+.rabel, .rabel2{
+    display: none;
+}
+
+.img-right, .img-right2{
+    display: none;
+}
+
+.img-left, .img-left2{
+    display: none;
+}
+
+.hidamari-text, .souryoku-text{
+    background-color: #fff;
+    opacity: 0.7;
+    line-height: 30px;
+    position: absolute;
+    width: 41.6%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.farmer-text{
+    position: absolute;
+    max-width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 12.5%;
+    font-size: 1.6rem;
+}
+
+.introduce{
+    display: block;
+    font-size: 2.5rem;
+    font-family: 'Noto Serif JP', serif;
+    margin-bottom: 1.0em;
+}
+
+.name{
+    display: block;
+    font-size: 1.8rem;
+    font-family: 'Noto Serif JP', serif;
+    margin-bottom: 2.0em;
+}
+
+.farm-images{
+    padding: 40px 0;
+    position: relative;
+    z-index: 100;
+}
+
+.images{
+    padding-right: 50px;
+}
+
+.images:last-of-type{
+    padding-right: 0;
+}
+
+.left-foundation{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+.left-foundation::after{
+    content: '';
+    background-color: #d8c3a7;
+    position: absolute;
+    top: 57%;
+    left: 0;
+    width: 80%;
+    height: 43%;
+    z-index: 1;
+}
+
+.left-wrap{
+    margin-top: 75px;
+    z-index: 100;
+    position: relative;
+}
+
+/* ----------------------------------------------
+section-quality-assurance
+------------------------------------------------*/
+
+.quality-assurance{
+    padding-top: 54%;
+    padding-left: 200px;
+    padding-right: 200px;
+    position: relative;
+    width: 100%;
+    height: 730px;
+    background-color: #b28850;
+    z-index: 1;
+}
+
+.flag-decoration2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23vw;
+}
+
+.bird-decoration{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 15vw;
+}
+
+.assurance-box{
+    padding: 40px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 100;
+}
+
+.quality-title{
+    color: #fbf7ce;
+    font-size: 4.0rem;
+    letter-spacing: 0.12em;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.sub-text{
+    padding-top: 50px;
+    color: #ffffff;
+    font-size: 2.0rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
+.quality-text_foundation{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    margin-top: -53%;
+    z-index: 200;
+}
+
+.white-round{
+    position: absolute;
+    z-index: 300;
+    /*top: 27%;
+    left: 50%;
+    */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    /*height: 310px;
+    min-width: 830px;
+    */
+    /* min-height: 25%; */
+    height: 90%;
+    min-width: 900px;
+    /*max-width: 70%;*/
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #fff;
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.space-bottom{
+    max-width: 725px;
+    letter-spacing: 0.12em;
+    line-height: 1.875;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.space-bottom:first-of-type{
+    padding-top: 65px;
+}
+
+.space-bottom:last-of-type{
+    padding-bottom: 50px;
+}
+
+.big-text{
+    font-size: 2.5rem;
+    color: #fbf7ce;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.red-text{
+    color: #fc0202;
+    font-weight: 600;
+}
+
+/* ----------------------------------------------
+sectin-Q&A
+------------------------------------------------*/
+.q-and-a-foundation{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+}
+
+.white-foundation{
+    width: 100%;
+    position: relative;
+}
+
+.q-and-a-title{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.question-title{
+    font-size: 4.5rem;
+    letter-spacing: 0.12em;
+    color: #000;
+}
+
+/* ------------ここまで上のコンテンツに含まれる */
+
+.q-and-a{
+    margin-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 100px;
+}
+
+.q-and-a-img{
+    background-image: url("../image/pc/question-foundation.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1200px;
+    margin: 0 auto;
+    position:relative;
+}
+
+.flower-decoration{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 200px;
+    z-index: 200;
+}
+
+.flower-decoration2{
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    width: 320px;
+    height: 200px;
+    z-index: 200;
+}
+
+.question2{
+    font-size: 1.8rem;
+    letter-spacing: 0.12em;
+    font-weight: normal;
+    line-height: 1.94;
+    width: 55.6%;
+    margin: 0 auto;
+}
+.question2:first-of-type{
+    padding-top: 105px;
+}
+
+.question2:last-of-type{
+    padding: 70px 0;
+}
+
+.sub-q{
+    margin-bottom: 1em;
+    z-index: 100;
+}
+.under-line{
+    border-bottom: solid 1px #000;
+}
+
+
+.font-bold2{
+    font-weight: 600;
+    display: block;
+}
+
+.br-sp-only{
+    display: none;
+}
+
+
+/* ----------------------------------------------
+sectin-campaign
+------------------------------------------------*/
+.campaign-wrap{
+    width: 100%;
+    padding: 100px 50px 0;
+}
+
+.campaign{
+    background-color: #b28850;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.catch{
+    color: #fbf7ce;
+    font-size: 3.0rem;
+    letter-spacing: 0.12em;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 40px;
+}
+
+.catch2{
+    color: #fff;
+    font-size: 5.5rem;
+    letter-spacing: 0.12em;
+    line-height: 1;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-bottom: 25px;
+}
+
+.campaign-under{
+    background-image: url("../image/pc/campaign_foundation.png");
+    padding: 75px 110px 60px;
+    height: 100%;
+    display:-webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.bejikkusu-pc{
+    display: block;
+}
+
+.bejikkusu-sp{
+    display: none;
+}
+
+.kutibue-pc{
+    display: block;
+}
+
+.kutibue-sp{
+    display: none;
+}
+
+.trial-set{
+    width: 440px;
+    background-color: #fff;
+}
+
+.trial-set:last-of-type{
+    margin-left: 100px;
+}
+
+.campaign-text{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+}
+
+dl.set-name{
+    margin: 0 auto;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+}
+
+dt.farm-brand_pc{
+    margin-bottom: 40px;
+}
+
+dd{
+    margin: 0;
+}
+
+.conversion-button3{
+    display: block;
+    padding: 40px 0 50px;
+    margin: auto;
+}
+
+.conversion-button3_sp{
+    display: none;
+}
+
+
+/* ----------------------------------------------
+sectin-footer
+------------------------------------------------*/
+.footer{
+    background-color: #834e00;
+    height: 100px;
+    color: #fff;
+    padding-top: 70px;
+}
+
+@media screen and (max-width:1520px){
+    .white-round{
+        height: 80%;
+        min-width: 800px;
+    }
+
+    .space-bottom{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:1093px){
+    /* section-customer-voice */
+    .up-title{
+        padding: 20px 35px 35px;
+    }
+
+    .down-title{
+        margin-left: 10%;
+        padding: 30px 50px;
+        text-align: center;
+    }
+    
+    .up-font{
+        font-size: 2.5vw;
+        margin: 0;
+        line-height: 4.5vw;
+    }
+    
+    .down-font{
+        font-size: 4.5vw;
+        line-height: 1;
+        color: #eeeeee;
+        letter-spacing: 0.12;
+    }
+
+    /* section-farmer-voice  */
+    .up-font2{
+        font-size: 2.5vw;
+    }
+    
+    .down-font2{
+        font-size: 4vw;
+    }
+
+    .farmer-text{
+        font-size: 1vw;
+    }
+    
+    .introduce{
+        font-size: 1.8vw;
+    }
+    
+    .name{
+        font-size: 1.6vw;
+    }
+
+    /* section-q-and-a */
+
+    .flower-decoration{
+        width: 30%;
+        height: 18vw;
+    }
+    
+    .flower-decoration2{
+        width: 30%;
+        height: 18vw;
+    }
+}
+
+@media screen and (max-width:940px){
+    .white-round{
+        height: 90%;
+    }
+
+    .space-bottom{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:768px){
+
+
+    /* ----------------------------------------------
+    header
+    ------------------------------------------------*/
+    /* --------------------------------------
+    共通
+    -------------------------------------- */
+    body{
+        font-size: 3.2rem;
+    }
+
+    .center{
+        text-align: center;
+    }
+
+    .kusa{
+        display: none;
+    }
+    .kusa_sp{
+        display: block;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* ----------------------------------------------
+    header
+    ------------------------------------------------*/
+    header{
+        padding: 20px 40px;
+    }
+
+    .catch-copy{
+        margin: 0 auto;
+        font-size: 4.2rem;
+        padding: 0;
+    }
+
+    .catch-image{
+        background-image: url("../image/sp/yasai1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 750px;
+        min-height: 650px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .humberger-img{
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+
+    .logo_sp{
+        display: block;
+        margin: 0 auto;
+        margin-top: 125px;
+        margin-bottom: 80px;
+    }
+
+    .logo{
+        display: block;
+        position: absolute;
+        right: 1%;
+        bottom: 1%;
+    }
+
+    .close::before {
+        position: absolute;
+        bottom: 0.9em;
+        right: 2em;
+        width: 0.1em;
+        height: 2.4em;
+        content: "";
+        background-color: #000000;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+    /* 右 */
+    .close::after {
+        position: absolute;
+        bottom: 2em;
+        right: 0.9em;
+        width: 2.4em;
+        height: 0.1em;
+        content: "";
+        background-color: #000000;
+        transform: rotate(225deg);
+        -webkit-transform: rotate(225deg);
+        -moz-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        -o-transform: rotate(225deg);
+    }
+
+
+    .navigator_div{
+        position:absolute;
+        top: -35%;
+        width: 100%;
+        height: 1390px;
+        background-color: #c0c5a3;
+        opacity: 0.9;
+        display: none;
+    }
+
+    .nav_pc{
+        display: none;
+    }
+
+    ul.nav{
+        display: block;
+        max-width: 750px;
+        padding-left: 0px;
+        margin: 0 auto;
+        list-style: none;
+        color: #fff;
+        background-color: #c0c5a3;
+        font-size: 4.0rem;
+        font-family: 'M PLUS 1p', 'sans-serif';
+    }
+
+    .nav-list{
+        text-align: center;
+        padding-bottom: 80px;
+        padding-top: 0;
+        padding-left: 0;
+        max-width: 750px;
+        background-color: #c0c5a3;
+    }
+
+    .nav-list>a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .nav-list>a:hover{
+        color: #ce6202;
+    }
+
+    /* ----------------------------------------------
+    section-lead
+    ------------------------------------------------*/
+
+    .lead{
+        padding-top: 100px;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .lead-text{
+        font-size: 3.2rem;
+        letter-spacing: 0.12em;
+        padding: 0 100px 0;
+        line-height: 1.56;
+        text-align: left;
+    }
+
+    .conversion-button{
+        display: none;
+    }
+
+    .conversion-button_sp{
+        display: block;
+        padding: 120px 0 260px;
+        margin: 0 auto;
+    }
+
+    /* ----------------------------------------------
+    section-three-reason
+    ------------------------------------------------*/
+
+    .three-reason{
+        padding: 180px 50px 230px;
+    }
+
+    h2{
+        font-size: 5.0rem;
+        letter-spacing: 0.12em;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .reason-box{
+        display: block;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .number{
+        padding-top: 90px;
+        width: 100%;
+    }
+
+    .number:nth-of-type(2){
+        margin: 0px;
+    }
+
+    .eq-distance{
+        display: none;
+    }
+
+    .eq-distance_sp{
+        display: block;
+        width: 85px;
+        height: 85px;
+    }
+
+    .last-img{
+        margin-top: 15px;
+    }
+
+    .reason{
+        width: 100%;
+    }
+
+    .sp-only-div{
+        display: flex;
+        padding: 30px 20px;
+    }
+
+    .sub-lead{
+        display: block;
+        font-size: 4.0rem;
+        font-weight: 700;
+        margin: 0 auto;
+        line-height: 1;
+        letter-spacing: 0.06em;
+        padding: 20px 0 0;
+    }
+
+    .sub-lead.last{
+        line-height: 1.5;
+        padding: 0;
+    }
+
+    .sil-foundation{
+        max-width: 650px;
+        max-height: 300px;
+    }
+
+    .silhouette{
+        display: none;
+    }
+
+    .silhouette_sp{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .reason-text{
+        text-indent: 1em;
+        line-height: 1.875;
+        letter-spacing: 0.12em;
+        text-align: left;
+        padding: 50px;
+        margin: 0;
+        min-height: 270px;
+    }
+
+    .pc-only-br{
+        display: none;
+    }
+
+    .bold{
+        font-weight: normal;
+    }
+
+    /* ----------------------------------------------
+    section-customer-voice
+    ------------------------------------------------*/
+    .customer-wrap{
+        padding: 230px 50px 0;
+    }
+
+    .flag-decoration{
+        display: none;
+    }
+
+    .flag-decoration_foundation{
+        position: relative;
+        width: 100%;
+        max-height: 400px;
+    }
+
+    .flag-decoration_sp{
+        display: block;
+        position: absolute;
+        top: 73%;
+        left: -10%;
+        z-index: 300;
+        width: 30vw;
+    }
+
+    .balloon-decoration{
+        position: absolute;
+        top: 58%;
+        right: 3%;
+        width: 20vw;
+    }
+
+    .customer-voice{
+        padding-top: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .double-title{
+        max-width: 100%;
+        height: 54vw;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .up-title{
+        background-color:#b28850;
+        max-width: 600px;
+        padding: 30px 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: #fbf7ce;
+        margin-left: 0;
+        margin-right: 50px;
+    }
+
+    .up-font{
+        font-size: 3.5vw;
+    }
+
+    .right-text{
+        display: block;
+        text-align: right;
+        margin-top: 0.5em;
+    }
+
+    .sp-only-blank{
+        display: inline;
+    }
+
+    .down-title{
+        background-color: #834e00;
+        max-width: 600px;
+        padding: 30px 55px;
+        margin: 0;
+        top: 28%;
+        right: 0;
+    }
+    .down-font{
+        font-size: 6.5vw;
+    }
+
+    .customer{
+        display: block;
+        background-color: #fceedb;
+        max-width: 650px;
+        padding: 50px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+
+    .first{
+        margin-top: 0;
+    }
+
+    .customer-image{
+        display: none;
+    }
+
+    .customer-text{
+        padding: 0;
+        max-width: 550px;
+        margin: 0 auto;
+        margin-left: 0;
+    }
+
+    .text-bold{
+        font-size: 3.2rem;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .sp-only-text{
+        display: none;
+    }
+
+    .customer-name-sp{
+        display: block;
+        text-align: center;
+    }
+
+    div.customer>.customer-text:nth-child(1){
+        text-align: left;
+        margin-right: 0px;
+    }
+
+    .conversion-button2{
+        display: none;
+    }
+
+    .conversion-button2_sp{
+        display: block;
+        padding: 150px 0 250px;
+        margin: 0 auto;
+    }
+
+
+    /* ----------------------------------------------
+    section-farm-reality
+    ------------------------------------------------*/
+
+    .organic-farm{
+        background-image: url("../image/sp/round_img_sp.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 220px 50px 250px;
+        color: #eeeeee;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    h3{
+        font-size: 5.0rem;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .sp-br-only{
+        display: inline;
+    }
+
+    .punctuation{
+        display: none;
+    }
+
+    .farm-text{
+        text-indent: 1em;
+        padding: 0;
+        font-size: 3.2rem;
+        line-height: 1.875;
+        font-weight: normal;
+        max-width: 595px;
+        margin: 0 auto;
+    }
+
+    .farm-text:first-of-type{
+        margin-top: 130px;
+        padding: 0;
+    }
+
+    .farm-text:last-of-type{
+        padding-bottom: 0;
+        margin-bottom: 160px;
+    }
+
+    .font-bold{
+        font-size: 3.6rem;
+        font-weight: normal;
+    }
+
+
+    /* ----------------------------------------------
+    omake-section オーガニックとは？
+    ------------------------------------------------*/
+
+    .omake-section{
+        max-width: 650px;
+        padding: 30px 20px 55px;
+    }
+
+    .question, .answer{
+        font-size: 3.2rem;
+        letter-spacing: 0.06em;
+        line-height: 1.56;
+    }
+
+    .question{
+        padding-left: 25px;
+        margin: 0;
+    }
+
+    .answer{
+        margin: 0;
+        padding-right: 0px;
+        padding-left: 25px;
+    }
+
+    .question-flex{
+        display: flex;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+        padding-top: 30px;
+    }
+
+    .girl,.teacher{
+        display: none;
+    }
+
+    .girl_sp, .teacher_sp{
+        display: block;
+        width: 70px;
+        height: 70px;
+    }
+
+    .small-div{
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .small{
+        font-size: 2.0rem;
+    }
+
+    /* ----------------------------------------------
+    section-difference
+    ------------------------------------------------*/
+
+    .difference{
+        padding-top: 140px;
+    }
+
+    .punctuation2{
+        display: none;
+    }
+
+    .table{
+        display: none;
+    }
+
+    .table_sp{
+        display: block;
+        padding-top: 140px;
+        margin: auto;
+    }
+
+    /* ----------------------------------------------
+    section-farmer-voice
+    ------------------------------------------------*/
+    .farmer-voice{
+        margin-top: 240px;
+        padding: 120px 50px 230px;
+        background-color: #fbf9bf;
+    }
+
+    .double-title2{
+        max-width: 100%;
+        height: 245px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .up-title2{
+        background-color: #b28850;
+        max-width: 600px;
+        margin: 0;
+        margin-right: 50px;
+        padding: 30px 50px 110px;
+        padding-left: 25px;
+        font-size: 3.2rem;
+        letter-spacing: 0.04em;
+        line-height: 0.93;
+    }
+
+    .down-title2{
+        max-width: 600px;
+        margin: 0;
+        margin-left: 50px;
+        padding: 15px 0;
+        padding-left: 40px;
+        padding-right: 50px;
+        font-size: 5.0rem;
+        letter-spacing: -0.05em;
+        line-height: 1;
+        top: 35%;
+    }
+
+    .up-font2{
+        font-size: 4vw;
+    }
+
+    .down-font2{
+        font-size: 6vw;
+        margin: 0;
+    }
+
+    .right-foundation{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 35px;
+    }
+
+    .right-foundation::before{
+        display: none;
+    }
+
+    .right-wrap{
+        margin-top: 95px;
+        margin-bottom: 105px;
+    }
+
+    .hidamari-farm, .souryoku-farm{
+        display: none;
+    }
+
+    .hidamari-farm-sp, .souryoku-farm-sp{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .img-right, .img-right2{
+        display: inline;
+        position: absolute;
+        top: 22%;
+        right: 10%;
+    }
+
+    .img-left, .img-left2{
+        display: inline;
+        position: absolute;
+        top: 22%;
+        left: 10%;
+    }
+
+    .hidamari-farm-sp:hover{
+        opacity: 0.8;
+    }
+
+    .souryoku-farm-sp:hover{
+        opacity: 0.8;
+    }
+
+    .rabel,.rabel2{
+        display: block;
+        position: absolute;
+        top: 8%;
+        left: 0;
+        width: 17vw;
+    }
+
+    .hidamari-text, .souryoku-text{
+        background-color: #fbf9bf;
+        opacity: 1;
+        line-height: 1.875;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .farmer-text{
+        position: static;
+        max-width: 650px;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 4vw;
+        padding-top: 45px;
+        padding-bottom: 0;
+    }
+
+    .introduce{
+        font-size: 5vw;
+        margin-bottom: 1.1em;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .name{
+        text-align: center;
+        font-size: 4vw;
+        margin-bottom: 2.0em;
+        font-weight: 600;
+    }
+
+    .farm-images{
+        display: none;
+    }
+
+    .left-foundation{
+        padding-bottom: 0;
+    }
+
+    .left-foundation::after{
+        display: none;
+    }
+
+    .left-wrap{
+        margin-top: 0px;
+    }
+
+    /* ----------------------------------------------
+    section-quality-assurance
+    ------------------------------------------------*/
+
+    .flag-decoration2{
+        top: 0;
+        left: 0;
+        width: 35vw;
+    }
+
+    .bird-decoration{
+        top: 3%;
+        right: 5%;
+        width: 30vw;
+    }
+
+    .quality-assurance{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 230px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .assurance-box{
+        padding: 215px 0;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .kusa_sp.special_margin{
+        margin-bottom: 270px;
+    }
+
+    .quality-title{
+        font-size: 8vw;
+        line-height: 1;
+        letter-spacing: 0.12em;
+    }
+
+    .quality-assurance{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .sub-text{
+        position: static;
+        padding-top: 50px;
+        height: 270px;
+        font-size: 5vw;
+        margin: -270px 0;
+        font-weight: normal;
+        letter-spacing: 0.04em;
+        line-height: 1.2;
+    }
+
+    .quality-text_foundation{
+        position:static;
+        display: block;
+        margin-top: 170px;
+        height: 100%;
+    }
+
+    .white-round{
+        position:static;
+        width: auto;
+        min-width: 0px;
+        height: auto;
+        transform:none;
+        -webkit-transform:none;
+        -ms-transform:none;
+        -moz-transform:none;
+        -o-transform:none;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+
+    p.space-bottom{
+        letter-spacing: 0.04em;
+        line-height: 1.875;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0 50px;
+        margin-bottom: 1em;
+        font-size: 4.3vw;
+    }
+
+    p.space-bottom{
+        margin: 0;
+    }
+
+    .space-bottom:first-of-type{
+        margin-bottom: 0;
+    }
+
+    .space-bottom:last-of-type{
+        padding-bottom: 80px;
+        margin-bottom: 0;
+    }
+
+    .sp-only-span{
+        display:block;
+        margin: 1em 0;
+    }
+
+    .big-text{
+        font-size: 6vw;
+        color: #fbf7ce;
+        font-weight: normal;
+        letter-spacing: 0.04em;
+    }
+
+    .red-text{
+        font-weight: normal;
+    }
+
+    /* ----------------------------------------------
+    sectin-Q&A
+    ------------------------------------------------*/
+    
+    .q-and-a-foundation{
+        bottom: -1%;
+    }
+
+    .q-and-a-title{
+        top: 300%;
+        left: 50%;
+    }
+
+    .question-title{
+        font-size: 5.0rem;
+        letter-spacing: 0.12em;
+        line-height: 1.0;
+    }
+
+    /* ------------ここまで上のコンテンツに含まれる */
+
+    .q-and-a{
+        margin-bottom: 0px;
+        padding: 380px 50px 0;
+    }
+
+    .q-and-a-img{
+        background-image: url("../image/sp/question_foundation.png");
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .flower-decoration{
+        top: 0;
+        right: -3%;
+    }
+
+    .flower-decoration2{
+        bottom: -1%;
+        left: -5%;
+    }
+
+    .question2{
+        font-size: 3.2rem;
+        letter-spacing: 0.06em;
+        line-height: 1.875;
+        width: 80%;
+    }
+
+    .question2:first-of-type{
+        padding-top: 100px;
+    }
+
+    .question2:last-of-type{
+        padding: 90px 0;
+    }
+
+    .sub-q{
+        font-size: 3.6rem;
+        margin-top: 0;
+    }
+
+    .font-bold2{
+        font-weight: normal;
+        display: inline;
+    }
+
+    .br-sp-only{
+        display:inline;
+    }
+
+    .answer-text2{
+        margin: 0;
+    }
+
+    /* ----------------------------------------------
+    section-campaign
+    ------------------------------------------------*/
+    .campaign-wrap{
+        padding: 225px 50px 0;
+    }
+    
+    .campaign{
+        max-width: 750px;
+        padding-top: 100px;
+        margin-top: 0px;
+    }
+
+    .catch{
+        font-size: 4vw;
+        line-height: 0.93;
+        letter-spacing: 0.12em;
+        font-family: 'Noto Serif JP', serif;
+    }
+    
+    .catch2{
+        font-size: 6.0vw;
+        line-height: 1.0;
+        padding-bottom: 30px;
+    }
+    
+    .campaign-under {
+        background-image: url(../image/sp/campaign_foundation.png);
+        padding: 75px 0 90px;
+        display: block;
+    }
+
+    .bejikkusu-pc{
+        display: none;
+    }
+
+    .bejikkusu-sp{
+        display: block;
+    }
+
+    .kutibue-pc{
+        display: none;
+    }
+
+    .kutibue-sp{
+        display: block;
+    }
+    
+    .trial-set{
+        width: 86.1%;
+        height: 43.6%;
+        margin:  0 50px;
+        margin: auto;
+    }
+
+    .trial-set:last-of-type{
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .campaign-text,.set-name>dt,.set-name>dd{
+        margin: 0;
+        padding-top: 0;
+        font-size: 3.2rem;
+        line-height: 1.56;
+        letter-spacing: 0.04em;
+        font-weight: 600;
+    }
+
+    .campaign-text{
+        padding-bottom: 50px;
+    }
+    .set-name>dt{
+        padding-top: 20px;
+    }
+
+    .set-name>dd:first-of-type{
+        margin-top: 1em;
+    }
+
+    .farm-brand{
+        display: block;
+    }
+
+    .conversion-button3{
+        display: none;
+    }
+
+    .conversion-button3_sp{
+        display: block;
+        padding: 100px 50px 170px;
+        margin: auto;
+    }
+
+
+    /* ----------------------------------------------
+    section-footer
+    ------------------------------------------------*/
+    .footer{
+        height: 150px;
+        padding-top: 100px;
+    }
+    small{
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width:567px){
+    /* section-customer-voice */
+    .up-title{
+        max-width: 400px;
+    }
+
+    .down-title{
+        top: 30%;
+    }
+    
+    .up-font{
+        font-size: 3.5vw;
+    }
+
+    .down-font{
+        font-size: 5.5vw;
+    }
+
+    /* section-farmer-voice */
+    .up-title2{
+        padding: 30px 50px 55px 25px;
+    }
+
+    .double-title2{
+        height: 150px;
+    }
+
+    .up-font2{
+        font-size: 3vw;
+    }
+
+    .down-font2{
+        font-size: 5vw;
+        margin: 0;
+    }
+    
+    /* section-quality-assurance */
+    .sub-text{
+        font-size: 4.5vw;
+    }
+
+
+}
+
+@media screen and (max-width:480px){
+    /* ----------------------------------------------
+    header
+    ------------------------------------------------*/
+    .catch-copy{
+        font-size: 2.6rem;
+    }
+
+    .humberger-img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .catch-image{
+        max-width: 487.5px;
+        min-height: 425px;
+        height: 425px;
+    }
+
+    .navigator_div{
+        top: -40%;
+        height: 1150px;
+    }
+
+    ul.nav{
+        font-size: 2.5rem;
+    }
+
+    .logo{
+        width: 188.75px;
+        height: 109.375px;
+    }
+
+    .humberger-logo-div{
+        width: 100%;
+    }
+
+    .logo_sp{
+        padding: 78.125px 36.25px 50px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    /* ----------------------------------------------
+    section-lead
+    ------------------------------------------------*/
+    .lead{
+        padding-top: 62.5px;
+    }
+
+    .lead-text{
+        font-size: 2.0rem;
+        padding: 0 62.5px;
+    }
+
+    .conversion-button_sp{
+        padding: 62.5px 31.25px 106.25px;
+    }
+    
+    /* ----------------------------------------------
+    section-three-reason
+    ------------------------------------------------*/
+    .three-reason{
+        padding: 112.5px 31.25px 143.75px;
+    }
+
+    h2{
+        font-size: 3.2rem;
+    }
+
+    .number{
+        padding-top: 56.25px;
+    }
+
+    .sp-only-div{
+        padding: 18.75px 12.5px;
+    }
+
+    .sub-lead{
+        font-size: 2.5rem;
+        padding-top: 12.5px;
+    }
+
+    .sil-foundation{
+        max-width: 417.5px;
+        max-height: 187.5px;
+    }
+
+    .reason-text{
+        font-size: 2.0rem;
+        padding: 31.25px;
+    }
+    
+    .eq-distance_sp{
+        width: 53px;
+        height: 53px;
+        margin-top: 0;
+    }
+
+    .last-img{
+        margin-top: 20px;
+    }
+
+    /* ----------------------------------------------
+    section-customer-voice
+    ------------------------------------------------*/
+    .customer-wrap{
+        padding: 143.75px 31.25px 156.75px;
+    }
+
+    .up-title{
+        max-width: 375px;
+        padding: 18.75px 31.25px;
+        font-size: 3vw;
+    }
+
+    .down-title{
+        max-width: 375px;
+        padding: 18.75px 34.375px;
+        font-size: 5vw;
+        top: 30%;
+    }
+
+    .flag-decoration_sp{
+        position: absolute;
+        top: 70%;
+        left: -10%;
+        width: 30vw;
+        z-index: 200;
+    }
+
+    .customer{
+        margin: 0 0 43.75px;
+        padding: 31.25px;
+    }
+
+    .customer.first{
+        margin-top: 0px;
+    }
+
+    .customer-text,.text-bold,.customer-name-sp{
+        font-size: 2.0rem;
+    }
+
+    .conversion-button2_sp{
+        padding: 93.75px 0 0;
+    }
+
+    /* ----------------------------------------------
+    section-farm-reality
+    ------------------------------------------------*/
+    .organic-farm{
+        padding: 137.5px 31.25px 156.25px;
+    }
+    
+    h3{
+        font-size: 3.1rem;
+    }
+
+    .farm-text,.question,.answer{
+        font-size: 2.0rem;
+    }
+
+    .font-bold{
+        font-size: 2.25rem;
+    }
+    .farm-text:first-of-type{
+        margin-top: 81.25px;
+    }
+
+    .farm-text:last-of-type{
+        margin-bottom: 100px;
+    }
+
+    .omake-section{
+        max-width: 406.25px;
+        padding: 18.75px 12.5px 34.375px;
+    }
+
+    .small-div{
+        padding-top: 31.25px;
+    }
+
+    .small{
+        font-size: 1.25rem;
+        line-height: 1.0;
+    }
+
+    .difference,.table_sp{
+        padding-top: 87.5px;
+    }
+
+    /* ----------------------------------------------
+    section-farmer-voice
+    ------------------------------------------------*/
+    .farmer-voice{
+        margin-top: 150px;
+        padding: 75px 31.25px 143.25px;
+    }
+
+    .double-title2{
+        height: 153.125px;
+        margin: 0;
+    }
+
+    .up-title2{
+        max-width: 375px;
+        max-height: 90px;
+        padding: 18.75px 0 53.125px 15.625px;
+    }
+
+    .down-title2{
+        max-width: 375px;
+        height: 106.25px;
+        top: 30%;
+        right: 0;
+        padding: 21.875px 21.25px;
+        padding-left: 25px;
+    }
+
+    .up-font2{
+        font-size: 3.5vw;
+    }
+
+    .down-font2{
+        font-size: 5.5vw;
+        letter-spacing: -0.05em;
+    }
+
+    .rabel,.rabel2{
+        top: 10%;
+        left: 0;
+        width: 14vw;
+    }
+
+    .img-left,.img-right,.img-right2,.img-left2{
+        top: 20%;
+        width: 12vw;
+    }
+
+    .farmer-text{
+        padding-top: 28.125px;
+    }
+
+    .right-foundation{
+        padding-bottom: 0px;
+    }
+
+    .left-foundation{
+        padding-bottom: 0;
+    }
+
+    /* ----------------------------------------------
+    section-quality-assurance
+    ------------------------------------------------*/
+    .assurance-box{
+        padding: 134px 31.25px;
+    }
+
+    img.kusa_sp.special_margin{
+        margin: 0 0 168.75px;
+    }
+
+    .sub-text{
+        margin: -168.75px 0;
+        padding: 31.25px 0 0;
+        font-size: 4vw;
+    }
+    .quality-title{
+        font-size: 3.125rem;
+    }
+
+    .white-round{
+        margin-top: 131.25px;
+    }
+
+    /* ----------------------------------------------
+    sectin-Q&A
+    ------------------------------------------------*/
+    .q-and-a{
+        padding: 237.5px 31.25px 0;
+    }
+    
+    .question-title{
+        font-size: 3.125rem;
+    }
+
+    .question2:first-of-type{
+        padding-top: 62.5px;
+    }
+
+    .question2:last-of-type{
+        padding: 56.25px 0;
+    }
+
+    .sub-q{
+        font-size: 2.2rem;
+    }
+
+    .answer-text2{
+        font-size: 2.0rem;
+        margin: 0;
+    }
+
+    /* ----------------------------------------------
+    section-campaign
+    ------------------------------------------------*/
+    .campaign-wrap{
+        padding: 140px 31.25px 0;
+    }
+    
+    .campaign{
+        margin-top: 0px;
+        padding-top: 62.5px;
+    }
+
+    .catch{
+        font-size: 2.0rem;
+        margin-bottom: 25px;
+        line-height: 1.1;
+    }
+
+    .catch2{
+        font-size: 3.125rem;
+    }
+
+    .campaign-under{
+        padding: 46.875px 0 56.25px;
+    }
+
+    .trial-set{
+        min-height: 100%;
+    }
+
+    .campaign-text{
+        font-size: 2.0rem;
+        padding-bottom: 31.25px;
+    }
+    .set-name>dt,.set-name>dd{
+        font-size: 2.0rem;
+    }
+
+    .conversion-button3_sp{
+        padding: 62.5px 31.25px 106.25px;
+    }
+
+    /* ----------------------------------------------
+    footer
+    ------------------------------------------------*/
+    .footer{
+        height: 93.75px;
+        padding-top: 62.5px;
+        font-size: 2.0rem;
+    }
+
+    small{
+        font-size: 1.25rem;
+        margin:0;
+    }
+}
+@media screen and (max-width:288px){
+    .navigator_div{
+        top: -47%;
+        height: 1100px;
+    }
+}
